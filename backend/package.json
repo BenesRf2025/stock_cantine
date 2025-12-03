@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "latest",
+    "cors": "latest",
+    "dotenv": "^17.2.2",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "mysql2": "latest",
+    "pdfkit": "^0.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
