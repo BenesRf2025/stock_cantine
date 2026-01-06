@@ -5,12 +5,12 @@ import { config } from "dotenv"
 config()
 
 const dbConfig = {
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
+  host: process.env.DB_HOST || "hala.gasyweb.com",
+  user: process.env.DB_USER || "aufsarl1_benesrf",
+  password: process.env.DB_PASSWORD || "BenesRf@2026",
 }
 
-const dbName = process.env.DB_NAME || "cantine_management"
+const dbName = process.env.DB_NAME || "aufsarl1_stock_management"
 
 async function seedDatabase() {
   // Connect without database to create it if needed
@@ -473,5 +473,6 @@ async function seedDatabase() {
     await connectionWithDB.end()
   }
 }
+
 
 seedDatabase()
