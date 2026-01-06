@@ -19,10 +19,10 @@ app.use(express.json())
 
 // Configuration de la base de données
 const dbConfig = {
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "cantine_management",
+  host: process.env.DB_HOST || "hala.gasyweb.com",
+  user: process.env.DB_USER || "aufsarl1_benesrf",
+  password: process.env.DB_PASSWORD || "BenesRf@2026",
+  database: process.env.DB_NAME || "aufsarl1_stock_management",
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
@@ -1492,4 +1492,5 @@ app.listen(PORT, async () => {
 
   // Vérifier les alertes de stock au démarrage
   await checkAndCreateStockAlerts()
+
 })
